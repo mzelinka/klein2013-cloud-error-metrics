@@ -42,6 +42,7 @@ If code is run with the provided sample input data, the output should be:
 
 E_TCA =
     0.7141
+    
     0.4725
     
 E_CP =
