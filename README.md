@@ -28,9 +28,9 @@ The GCM simulator-oriented ISCCP and MODIS cloud observational benchmarks from w
 
 Output
 ----------
-The following 4 scalars:
+The following quantities:
 
-E_TCA: the total cloud amount error 
+E_TCA: the total cloud amount error (first: GCM vs ISCCP; second: MODIS vs ISCCP)
 
 E_CP: the cloud properties error 
 
@@ -38,6 +38,16 @@ E_LWCP: the LW-relevant cloud properties error
 
 E_SWCP: the SW-relevant cloud properties error 
 
+If code is run with the provided sample input data, the output should be:
+
+E_TCA =
+    0.7141    0.4725
+E_CP =
+    1.0310
+E_LWCP =
+    1.0841
+E_SWCP =
+    1.1836
 
 Figure Generation
 ----------
