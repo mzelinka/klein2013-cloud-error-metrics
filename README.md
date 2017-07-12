@@ -41,11 +41,15 @@ E_SWCP: the SW-relevant cloud properties error
 If code is run with the provided sample input data, the output should be:
 
 E_TCA =
-    0.7141    0.4725
+    0.7141
+    0.4725
+    
 E_CP =
     1.0310
+    
 E_LWCP =
     1.0841
+    
 E_SWCP =
     1.1836
 
