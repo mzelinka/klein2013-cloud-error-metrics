@@ -38,10 +38,9 @@ E_LWCP: the LW-relevant cloud properties error
 
 E_SWCP: the SW-relevant cloud properties error 
 
-If code is run with the provided sample input data, the output should be:
 For the provided sample imput data, the code should print the following output. The values are slightly different in the Matlab and Python versions, possibly due to differences in regridding and in area-weighted averaging.
 
-| Average Cloud Feedback Component | Matlab | Python |
+| Error Metric | Matlab | Python |
 |:---------------------------------|:-------|:-------|
 | E_TCA | 0.7141; 0.4725 | 0.7141; 0.4725 |
 | E_CP | 1.0310  | 1.0422 |
