@@ -42,10 +42,10 @@ For the provided sample imput data, the code should print the following output. 
 
 | Error Metric | Matlab | Python |
 |:---------------------------------|:-------|:-------|
-| E_TCA | 0.7141; 0.4725 | 0.7141; 0.4725 |
-| E_CP | 1.0310  | 1.0422 |
-| E_LWCP | 1.0841  | 1.0849 |
-| E_SWCP | 1.1836  | 1.1945 |
+| E_TCA | 0.7141; 0.4725 | 0.7153; 0.4730 |
+| E_CP | 1.0310  | 1.0306 |
+| E_LWCP | 1.0841  | 1.0841 |
+| E_SWCP | 1.1836  | 1.1837 |
 
 Figure Generation
 ----------
