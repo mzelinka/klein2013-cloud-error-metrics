@@ -65,8 +65,14 @@ def reshape_generic(orig_data,data_to_match):
                 orig_data = np.ma.array(NEW)
 
     # need to move axes around
-    for i in range(len(B)):
+    C=orig_data.shape
+    i=-1
+    while B!=C:
+        i+=1
+        if i==len(B):
+            i=0
         C=orig_data.shape
+        #print C
         if C[i]!=B[i]:
             orig_data = np.moveaxis(orig_data, i, B.index(C[i])) # (a, source, destination)
 
@@ -277,8 +283,8 @@ w_k = w_k0[15:-15] # equatorward of 60
 ########################################################
 # 1) Denominator (Eq. 3 in Klein et al. (2013))
 avg = cdutil.averager(MV.average(obs_cltisccp_eq60,axis=0), axis='xy', weights='weighted') # (scalar)
-rep_avg = reshape_generic(avg,obs_cltisccp_eq60) # (time, lat, lon)
-anom = obs_cltisccp_eq60 - rep_avg # anomaly of obs from its spatio-temporal mean
+#rep_avg = reshape_generic(avg,obs_cltisccp_eq60) # (time, lat, lon)
+anom = obs_cltisccp_eq60 - avg # anomaly of obs from its spatio-temporal mean
 area_wts2 = reshape_generic(w_k,anom) # (time, lat, lon)
 E_TCA_denom = np.ma.sqrt(MV.sum(area_wts2*anom**2)) # (scalar)
 #E_TCA_denom = np.ma.sqrt(cdutil.averager(MV.average(anom**2,axis=0), axis='xy', weights='weighted')) # (scalar)
@@ -307,7 +313,7 @@ LWkernel_eq60 = eq60.select(LWkernel_map[:,2:,:])
 SWkernel_eq60 = eq60.select(SWkernel_map[:,2:,:])  
 
 # Compute anomaly of obs histogram from its spatio-temporal mean
-avg_obs_clisccp_eq60 = cdutil.averager(obs_clisccp_eq60, axis='xy', weights='weighted') # (time,TAU,CTP)
+avg_obs_clisccp_eq60 = cdutil.averager(MV.average(obs_clisccp_eq60,0), axis='xy', weights='weighted') # (TAU,CTP)
 rep_avg_obs_clisccp_eq60 = reshape_generic(avg_obs_clisccp_eq60,obs_clisccp_eq60) # (time, TAU, CTP, lat, lon)
 anom_obs_clisccp_eq60 = obs_clisccp_eq60 - rep_avg_obs_clisccp_eq60 # anomaly of obs from its spatio-temporal mean
 
@@ -391,4 +397,5 @@ print('E_SW: '+str(E_SW_mod))
 #print('E_CTP_TAU: '+str(np.ma.average(E_ctpt_mod)))
 #print('E_LW: '+str(np.ma.average(E_LW_mod)))
 #print('E_SW: '+str(np.ma.average(E_SW_mod)))
+
 
