@@ -3,9 +3,9 @@ Compute four scalar measures of the fidelity of model cloud simulations describe
 
 References
 ----------
-Klein, S.A., Y. Zhang, M.D. Zelinka, R.N. Pincus, J.Boyle, and P.J. Gleckler, 2013: Are climate model simulations of clouds improving? An evaluation using the ISCCP simulator. J. Geophys. Res. 118, 1329-1342. doi: 10.1002/jgrd.50141.
+Klein, S.A., Y. Zhang, M.D. Zelinka, R.N. Pincus, J.Boyle, and P.J. Gleckler, 2013: Are climate model simulations of clouds improving? An evaluation using the ISCCP simulator. J. Geophys. Res. 118, 1329-1342. [doi:10.1002/jgrd.50141](http://onlinelibrary.wiley.com/doi/10.1002/jgrd.50141/abstract).
 
-Zelinka, M. D., S. A. Klein, and D. L. Hartmann, 2012: Computing and Partitioning Cloud Feedbacks Using Cloud Property Histograms. Part I: Cloud Radiative Kernels. J. Climate, 25, 3715–3735. doi:10.1175/JCLI-D-11-00248.1.
+Zelinka, M. D., S. A. Klein, and D. L. Hartmann, 2012: Computing and Partitioning Cloud Feedbacks Using Cloud Property Histograms. Part I: Cloud Radiative Kernels. J. Climate, 25, 3715–3735. [doi:10.1175/JCLI-D-11-00248.1](http://journals.ametsoc.org/doi/abs/10.1175/JCLI-D-11-00248.1).
 
 Input
 ----------
