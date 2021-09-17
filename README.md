@@ -1,4 +1,8 @@
 # klein2013-cloud-error-metrics
+
+[![DOI](https://zenodo.org/badge/61585611.svg)](https://zenodo.org/badge/latestdoi/61585611)
+
+
 Compute four scalar measures of the fidelity of model cloud simulations described in Section 4 of Klein et al. (2013). 
 
 References
